@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>WeatherJS</title>
+</head>
+<body>
+    <div class="container">
+            <header class="main-section">
+                <div class="main-section__wrapper-first">
+                    <a href="#" class="main-section__logo"><img src="icon/logo.svg" alt="Логотип"></a>
+                    <h1 class="main-section__title">WeatherJS</h1>
+                </div>
+                <div class="main-section__wrapper-second">
+                    <button class="main-section__btn-theme"><img src="icon/btnTheme.svg" alt="Светлая/темная тема"></button>
+                    <select name="city" class="main-section__select-city">
+                        <option value="498698" selected>Саранск</option>
+                        <option value="524894">Москва</option>
+                        <option value="498817">Санкт-Петербург</option>
+                    </select>
+                </div>
+            </header>
+            <div class="wrapper-second-section">
+                <section class="second-section">
+                    <div class="second-section__left left-block">   
+                            <h2 class="left-block__degree"><span class="left-block__degree-value"></span>°</h2>     
+                            <img src="" alt="Погода" class="left-block__icon-weather">                   
+                            <h3 class="left-block__today-text">Сегодня</h3>
+                            <h4 class="left-block__time">Время: <span class="left-block__timer"></span></h4>
+                            <h4 class="left-block__city">Город: <span class="left-block__city-name"></span></h4>
+                    </div>
+                    <div class="second-section__right right-block">
+                        <div class="right-block__round-icon right-block__icon-temp">
+                            <img src="icon/temp.svg" alt="Температура" class="right-block__icon">                            
+                        </div>
+                        <p class="right-block__text right-block__text-temp"><span class="right-block__text-temp-first-word right-block__text_gray">Температура</span><span class="right-block__text-temp-value"></span>° - ощущается как <span class="right-block__text-temp-feels-like-value"></span>°</p>
+                        <div class="right-block__round-icon right-block__icon-pressure">
+                            <img src="icon/pressure.svg" alt="Давление" class="right-block__icon">                            
+                        </div>
+                        <p class="right-block__text right-block__text-pressure"><span class="right-block__text-pressure-first-word right-block__text_gray">Давление</span><span class="right-block__text-pressure-value"></span> мм ртутного столба - <span class="right-block__text-pressure-property"></span></p>
+                        <div class="right-block__round-icon right-block__icon-precipitation">
+                            <img src="icon/precipitation.svg" alt="Осадки" class="right-block__icon">                            
+                        </div>
+                        <p class="right-block__text right-block__text-precipitation"><span class="right-block__text-precipitation-first-word right-block__text_gray">Осадки</span><span class="right-block__text-precipitation-value"></span></p>
+                        <div class="right-block__round-icon right-block__icon-wind">
+                            <img src="icon/wind.svg" alt="Ветер" class="right-block__icon">                            
+                        </div>
+                        <p class="right-block__text right-block__text-wind"><span class="right-block__text-wind-first-word right-block__text_gray">Ветер</span><span class="right-block__text-wind-value"></span> м/с <span class="right-block__text-wind-direction"></span> - <span class="right-block__text-wind-description"></span></p>
+                    </div>
+                </section>
+            </div>
+            <div class="wrapper-third-section">
+                <section class="third-section">
+                    <div class="third-section__buttons">
+                        <button class="third-section__btn">На неделю</button>
+                    </div>
+                    <div class="third-section__cards card-weather">
+                        <div class="card-weather__list">
+                            <h5 class="card-weather__day-of-the-week">Сегодня</h5>
+                            <h6 class="card-weather__date">28 авг</h6>
+                            <img src="icon/wheater1.svg" alt="Погода" class="card-weather__icon-temp">
+                            <h5 class="card-weather__temp-of-day">+18°</h5>
+                            <h6 class="card-weather__temp-of-night">+15°</h6>
+                            <h6 class="card-weather__precipitation">Облачно</h6>
+                        </div>
+                        <div class="card-weather__list">
+                            <h5 class="card-weather__day-of-the-week">Завтра</h5>
+                            <h6 class="card-weather__date">28 авг</h6>
+                            <img src="icon/wheater1.svg" alt="Погода" class="card-weather__icon-temp">
+                            <h5 class="card-weather__temp-of-day">+18°</h5>
+                            <h6 class="card-weather__temp-of-night">+15°</h6>
+                            <h6 class="card-weather__precipitation">Облачно</h6>
+                        </div>
+                        <div class="card-weather__list">
+                            <h5 class="card-weather__day-of-the-week">Пн</h5>
+                            <h6 class="card-weather__date">28 авг</h6>
+                            <img src="icon/wheater1.svg" alt="Погода" class="card-weather__icon-temp">
+                            <h5 class="card-weather__temp-of-day">+18°</h5>
+                            <h6 class="card-weather__temp-of-night">+15°</h6>
+                            <h6 class="card-weather__precipitation">Облачно</h6>
+                        </div>
+                        <div class="card-weather__list">
+                            <h5 class="card-weather__day-of-the-week">Вт</h5>
+                            <h6 class="card-weather__date">28 авг</h6>
+                            <img src="icon/wheater1.svg" alt="Погода" class="card-weather__icon-temp">
+                            <h5 class="card-weather__temp-of-day">+18°</h5>
+                            <h6 class="card-weather__temp-of-night">+15°</h6>
+                            <h6 class="card-weather__precipitation">Облачно</h6>
+                        </div>
+                        <div class="card-weather__list">
+                            <h5 class="card-weather__day-of-the-week">Ср</h5>
+                            <h6 class="card-weather__date">28 авг</h6>
+                            <img src="icon/wheater1.svg" alt="Погода" class="card-weather__icon-temp">
+                            <h5 class="card-weather__temp-of-day">+18°</h5>
+                            <h6 class="card-weather__temp-of-night">+15°</h6>
+                            <h6 class="card-weather__precipitation">Облачно</h6>
+                        </div>
+                        <div class="card-weather__list">
+                            <h5 class="card-weather__day-of-the-week">Чт</h5>
+                            <h6 class="card-weather__date">28 авг</h6>
+                            <img src="icon/wheater1.svg" alt="Погода" class="card-weather__icon-temp">
+                            <h5 class="card-weather__temp-of-day">+18°</h5>
+                            <h6 class="card-weather__temp-of-night">+15°</h6>
+                            <h6 class="card-weather__precipitation">Облачно</h6>
+                        </div>
+                        <div class="card-weather__list">
+                            <h5 class="card-weather__day-of-the-week">Пт</h5>
+                            <h6 class="card-weather__date">28 авг</h6>
+                            <img src="icon/wheater1.svg" alt="Погода" class="card-weather__icon-temp">
+                            <h5 class="card-weather__temp-of-day">+18°</h5>
+                            <h6 class="card-weather__temp-of-night">+15°</h6>
+                            <h6 class="card-weather__precipitation">Облачно</h6>
+                        </div>
+                    </div>
+                </section>
+            </div>        
+    </div>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
